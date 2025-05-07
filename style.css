@@ -1,0 +1,63 @@
+/* Animações de Fade + Slide In */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #fce4ec;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  color: #c2185b;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.main-image {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 18px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe57;
+  transform: scale(1.1);
+}
+
+/* Efeito de animação no link do Instagram */
+.instagram-link {
+  color: #c2185b;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.instagram-link:hover {
+  transform: scale(1.1);
+}
+
+/* Animação de pulsação no botão */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
